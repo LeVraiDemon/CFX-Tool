@@ -288,7 +288,6 @@ class CFXTool:
             
             cache_folders = [
                 os.path.join(fivem_data_path, "cache"),
-                os.path.join(fivem_data_path, "nui-storage"),
                 os.path.join(fivem_data_path, "server-cache"),
                 os.path.join(fivem_data_path, "server-cache-priv")
             ]
@@ -403,4 +402,5 @@ def main():
     root.mainloop()
 
 if __name__ == "__main__":
+
     main()
