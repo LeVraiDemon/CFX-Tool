@@ -256,6 +256,8 @@ class CFXTool:
             cache_folders = [
                 os.path.join(redm_data_path, "cache"),
                 os.path.join(redm_data_path, "server-cache"),
+                os.path.join(redm_data_path, "nui-storage"),
+                os.path.join(redm_data_path, "logs"),
                 os.path.join(redm_data_path, "server-cache-priv")
             ]
             
@@ -287,9 +289,11 @@ class CFXTool:
             fivem_data_path = os.path.join(self.local_app_data, "FiveM", "FiveM.app", "data")
             
             cache_folders = [
-                os.path.join(fivem_data_path, "cache"),
-                os.path.join(fivem_data_path, "server-cache"),
-                os.path.join(fivem_data_path, "server-cache-priv")
+                os.path.join(redm_data_path, "cache"),
+                os.path.join(redm_data_path, "server-cache"),
+                os.path.join(redm_data_path, "nui-storage"),
+                os.path.join(redm_data_path, "logs"),
+                os.path.join(redm_data_path, "server-cache-priv")
             ]
             
             deleted_count = 0
@@ -404,3 +408,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
